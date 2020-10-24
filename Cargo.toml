@@ -1,0 +1,13 @@
+[package]
+name = "lambda_authorizer"
+version = "0.1.0"
+authors = ["Naoaki Iwakiri <naokiri@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# TODO: Use lambda_runtime v0.3 when this package is published to crates.io
+lambda = { git = "https://github.com/awslabs/aws-lambda-rust-runtime/", branch = "master" }
+serde = { version = "1", features = ["derive"] }
+rusoto_core = { version = "^0.45", default_features = false, features = ["rustls"] }

@@ -1,2 +1,1 @@
-# lambda_authorizer_example
-AWS API Gateway Lambda Authorizer in Rust
+AWS API Gateway Lambda authorizer boilerplate
